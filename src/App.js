@@ -4,7 +4,10 @@ import Project from "./components/Project";
 import Resume from "./components/Resume";
 import Home from "./components/Home";
 import ErrorPage from "./components/ErrorPage";
+import { disableReactDevTools } from "@fvilers/disable-react-devtools";
 
+if(process.env.NODE_ENV==="production") disableReactDevTools()
+  
 function App() {
   return (
     <div className="bg-white dark:bg-zinc-800">
