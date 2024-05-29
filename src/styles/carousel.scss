@@ -1,0 +1,76 @@
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    border-color: #c5d6f0;
+    width: 100%;
+    height: 100px;
+}
+
+.carousel-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 230px;
+
+    &:hover {
+        transform: scale(0.9);
+        z-index: 10;
+
+        .tooltiptext {
+            visibility: visible;
+        }
+    }
+
+
+
+    .tooltiptext {
+
+        visibility: hidden;
+        width: 100%;
+        background-color: #14b8a6;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 2px 0;
+
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+
+        left: 0%;
+        font-size: 11px;
+
+    }
+}
+
+.carousel-card>img {
+    border-radius: 10%;
+    width: 90px;
+}
+
+.carousel-track {
+    display: flex;
+    position: absolute;
+    left: 0;
+    align-items: center;
+    gap: 16px;
+    width: 200%;
+    height: 95px;
+    // background: #556c8b;
+    animation: slide 16s linear infinite;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%)
+    }
+
+    100% {
+        transform: translateX(-20%);
+    }
+}
