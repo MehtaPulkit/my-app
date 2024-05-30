@@ -70,6 +70,19 @@ const About = () => {
                 Scrum and Kanban methodologies, fostering a collaborative and
                 iterative approach to development.
               </p>
+            </li><li className="my-1">
+              {" "}
+              <i className="font-medium">Performance Optimization</i>{" "}
+              <p className="dark:text-zinc-400">
+              Implemented optimization techniques that improved application performance by 20%, enhancing user experience and reducing load times.
+              </p>
+            </li>
+            <li className="my-1">
+              {" "}
+              <i className="font-medium">Quality Assurance</i>{" "}
+              <p className="dark:text-zinc-400">
+              Conducted rigorous testing and debugging of applications to ensure high-quality deliverables and adherence to client specifications.
+              </p>
             </li>
           </ol>
         </div>
@@ -107,6 +120,22 @@ const About = () => {
                 Effective communicator with a demonstrated ability to establish
                 and maintain strong relationships with clients, ensuring
                 transparency and alignment throughout the project lifecycle.
+              </p>
+            </li>
+            <li className="my-1">
+              <i className="font-medium">Training and Development</i>{" "}
+              <p className="dark:text-zinc-400">
+                Developed and executed comprehensive training programs,
+                including workshops and tutorials, which enhanced team
+                productivity by 30%.
+              </p>
+            </li>
+            <li className="my-1">
+              <i className="font-medium">Recruitment and Talent Acquisition</i>{" "}
+              <p className="dark:text-zinc-400">
+                Oversaw the recruitment process, defining job requirements,
+                conducting interviews, and selecting top-tier developers,
+                leading to a 25% increase in team performance.
               </p>
             </li>
           </ol>

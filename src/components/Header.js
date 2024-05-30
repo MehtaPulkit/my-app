@@ -47,15 +47,15 @@ const Header = () => {
                           >
                             Experience
                           </HashLink>
-                        </li>
-                        {/* <li>
+                      </li>
+                        <li>
                           <Link
                             className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
                             to="projects"
                           >
                             Projects
                           </Link>
-                        </li> */}
+                        </li>
                         <li>
                           <Link
                             className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"

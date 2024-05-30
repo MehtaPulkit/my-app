@@ -12,19 +12,19 @@ const Project = () => {
       name: "Thriveee",
       desc: "Accounting software, managing your wealth for future success",
       img: tlogo,
-      url: "",
+      url: "https://thriveee.onrender.com",
     },
     {
       name: "Edu Hub",
       desc: "Online Learning Platform System, Education is just a click away.",
       img: edu,
-      url: "",
+      url: "https://client-lms.onrender.com",
     },
     {
       name: "WMS",
       desc: "Women safety application, for you anywhere anytime!",
       img: wlogo,
-      url: "",
+      url: "https://wms-5uub.onrender.com",
     },
   ];
   return (
@@ -40,7 +40,7 @@ const Project = () => {
           Queensland, Latitude Financial Services and Energy Australia. These
           experiences have allowed me to apply my full-stack development skills
           and technical leadership to a range of challenging and impactful
-          projects. I led the development of innovative web applications that
+          projects.<br/> I led the development of innovative web applications that
           streamlined business processes and I collaborated with
           cross-functional teams to deliver high-quality software solutions for
           diverse clients. These projects have honed my ability to deliver
@@ -51,10 +51,10 @@ const Project = () => {
       <img alt="companies" src={companies} className="h-24 m-auto" />
       <div className="my-10">
         <p className="my-2 dark:text-zinc-400">
-          Apart from that:
+         <b className="text-lg">Live Projects:</b> 
           <br />
           Explore a selection of my key projects that demonstrate my skills in
-          full-stack development, technical leadership, and problem-solving.
+          full-stack development and problem-solving.
         </p>
       </div>
       <div className="mt-16 sm:mt-20">
@@ -70,7 +70,7 @@ const Project = () => {
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
                 <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl dark:bg-zinc-800/50 dark:group-hover:bg-zinc-700"></div>
-                <a href="#">
+                <a href={p?.url} target="_blank">
                   <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
                   <span className="relative z-10">{p?.name}</span>
                 </a>
