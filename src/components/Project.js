@@ -4,6 +4,7 @@ import edu from "../assets/edu.jpeg";
 import wlogo from "../assets/w-logo.svg";
 import tlogo from "../assets/thriveeeLogo.svg";
 import { LinkIcon } from "@heroicons/react/20/solid";
+import { Link } from "react-router-dom";
 
 const Project = () => {
 
@@ -12,19 +13,19 @@ const Project = () => {
       name: "Thriveee",
       desc: "Accounting software, managing your wealth for future success",
       img: tlogo,
-      url: "https://thriveee.onrender.com",
+      url: "project/thriveee",
     },
     {
       name: "Edu Hub",
       desc: "Online Learning Platform System, Education is just a click away.",
       img: edu,
-      url: "https://client-lms.onrender.com",
+      url: "project/lms",
     },
     {
       name: "WMS",
       desc: "Women safety application, for you anywhere anytime!",
       img: wlogo,
-      url: "https://wms-5uub.onrender.com",
+      url: "project/wms",
     },
   ];
   return (
@@ -70,10 +71,10 @@ const Project = () => {
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
                 <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl dark:bg-zinc-800/50 dark:group-hover:bg-zinc-700"></div>
-                <a href={p?.url} target="_blank">
+                <Link to={p?.url}>
                   <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
                   <span className="relative z-10">{p?.name}</span>
-                </a>
+                </Link>
               </h2>
               <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
                 {p?.desc}
