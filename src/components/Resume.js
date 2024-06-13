@@ -3,6 +3,7 @@ import { Document, Page, pdfjs } from "react-pdf";
 import resumeFile from "../assets/files/Resume-Pulkit.pdf";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
+import DownloadButton from "../utils/DownloadButton";
 const Resume = () => {
   pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -17,15 +18,17 @@ const Resume = () => {
     <>
       <h1 className="text-xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100 max-[640px]:flex justify-center my-5">
         Resume{" "}
-        <button className="rounded bg-slate-100 border border-solid border-grey hover:bg-slate-200  dark:bg-slate-800 dark:text-white p-2 ml-4">
+        {/* <button className="rounded bg-slate-100 border border-solid border-grey hover:bg-slate-200  dark:bg-slate-800 dark:text-white p-2 ml-4">
+        <a href="../assets/files/Resume-Pulkit.pdf" download="Resume-PulkitMehta">
           <svg
             className="fill-current w-4 h-4"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
           >
             <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
-          </svg>
-        </button>
+          </svg></a>
+        </button> */}
+        <DownloadButton/>
       </h1>
       <div className="max-[640px]:hidden">
         <div className="m-auto flex flex-col items-center border border-solid border-grey w-fit">
