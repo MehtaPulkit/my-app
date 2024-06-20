@@ -19,18 +19,17 @@ const About = () => {
       {/* Title */}
 
       <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-        Full Stack Developer, Technical Manager and Leader
+        Senior Technical Lead
       </h1>
 
       {/* Description */}
       <div className="my-10">
         <p className="my-2 dark:text-zinc-400">
-          As an experienced Full Stack Developer,Technical Manager, and Leader,
-          I bring a proven track record of delivering innovative and
-          high-quality solutions across a diverse range of projects. With a
-          comprehensive skill set encompassing both front-end and back-end
-          technologies, coupled with strong leadership capabilities, I have
-          consistently driven teams to success while exceeding project
+          With over 6 years of experience as a Senior Technical Lead, I possess
+          a robust track record of delivering cutting-edge, high-quality
+          solutions across diverse projects. My expertise spans both front-end
+          and back-end technologies, complemented by strong leadership
+          capabilities that have consistently driven teams to exceed project
           expectations.
         </p>
         <div className="my-8">
@@ -70,18 +69,23 @@ const About = () => {
                 Scrum and Kanban methodologies, fostering a collaborative and
                 iterative approach to development.
               </p>
-            </li><li className="my-1">
+            </li>
+            <li className="my-1">
               {" "}
               <i className="font-medium">Performance Optimization</i>{" "}
               <p className="dark:text-zinc-400">
-              Implemented optimization techniques that improved application performance by 20%, enhancing user experience and reducing load times.
+                Implemented optimization techniques that improved application
+                performance by 20%, enhancing user experience and reducing load
+                times.
               </p>
             </li>
             <li className="my-1">
               {" "}
               <i className="font-medium">Quality Assurance</i>{" "}
               <p className="dark:text-zinc-400">
-              Conducted rigorous testing and debugging of applications to ensure high-quality deliverables and adherence to client specifications.
+                Conducted rigorous testing and debugging of applications to
+                ensure high-quality deliverables and adherence to client
+                specifications.
               </p>
             </li>
           </ol>
