@@ -56,14 +56,14 @@ const Header = () => {
                             Projects
                           </Link>
                         </li>
-                        <li>
+                        {/* <li>
                           <Link
                             className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
                             to="resume"
                           >
                             Resume
                           </Link>
-                        </li>
+                        </li> */}
                       </ul>
                     </nav>
                   </div>
