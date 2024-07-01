@@ -55,8 +55,8 @@ export const workData = {
       type: "Role",
       acheivement: "System Engineer",
       detail: "Date",
-      startYear: "2018",
-      endYear: "2016",
+      startYear: "2016",
+      endYear: "2018",
     },
   ],
 };
