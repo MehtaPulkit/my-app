@@ -19,13 +19,13 @@ const About = () => {
       {/* Title */}
 
       <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-        Senior Technical Lead
+        Full Stack Engineer
       </h1>
 
       {/* Description */}
       <div className="my-10">
         <p className="my-2 dark:text-zinc-400">
-          With over 6 years of experience as a Senior Technical Lead, I possess
+          With over 6 years of experience as a Full Stack Engineer, I possess
           a robust track record of delivering cutting-edge, high-quality
           solutions across diverse projects. My expertise spans both front-end
           and back-end technologies, complemented by strong leadership
@@ -40,16 +40,15 @@ const About = () => {
               <p className="dark:text-zinc-400">
                 Proficient in building robust web applications from conception
                 to deployment using a wide range of technologies including but
-                not limited to HTML/CSS, JavaScript, React.js, Node.js,
-                Tailwind, Express and Redux.
+                not limited to HTML/CSS, JavaScript, React.js, .Net, Redux,
+                Tailwind CSS, Express and Node.js.
               </p>
             </li>{" "}
             <li className="my-1">
               {" "}
               <i className="font-medium"> Database Management</i>{" "}
               <p className="dark:text-zinc-400">
-                Skilled in designing and optimizing databases using NoSQL
-                technologies such as MongoDB.
+                Skilled in designing and optimizing databases like MSSQL and MongoDB.
               </p>
             </li>{" "}
             <li className="my-1">
@@ -83,7 +82,7 @@ const About = () => {
               {" "}
               <i className="font-medium">Quality Assurance</i>{" "}
               <p className="dark:text-zinc-400">
-                Conducted rigorous testing and debugging of applications to
+                Conducted rigorous manual and automated testing and debugging of applications to
                 ensure high-quality deliverables and adherence to client
                 specifications.
               </p>

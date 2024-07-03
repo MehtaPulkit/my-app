@@ -96,7 +96,8 @@ const ProjectPage = () => {
           administrators to manage courses, track enrollments, and monitor
           revenue.
           <br />
-          <b>Technical Skills </b><br/>
+          <b>Technical Skills </b>
+          <br />
           The backend of the platform is built with Node.js and Express.js,
           providing a robust server-side environment that handles various
           functionalities such as user authentication, course management, and
@@ -245,7 +246,12 @@ const ProjectPage = () => {
         </div>
         <div>
           {selectedProject?.images.map((img, k) => (
-            <img src={img} alt="" className="mt-6 rounded-2xl w-96" key={k} />
+            <img
+              src={img}
+              alt=""
+              className="mt-6 rounded-2xl w-96 shadow-lg"
+              key={k}
+            />
           ))}
 
           <hr className="my-6" />
