@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import thmain from "../assets/th-main.png";
-import thdash from "../assets/th-dash.png";
-import thdark from "../assets/th-dark.png";
-import lmsmain from "../assets/lms-main.png";
-import lmsdash from "../assets/lms-dash.png";
-import lmsdark from "../assets/lms-dark.png";
-import wmsmain from "../assets/wms-main.png";
-import wmsdash from "../assets/wms-dash.png";
-import wmscontact from "../assets/wms-contact.png";
 import { ArrowUpRightIcon, LinkIcon } from "@heroicons/react/20/solid";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import lmsdark from "../assets/lms-dark.png";
+import lmsdash from "../assets/lms-dash.png";
+import lmsmain from "../assets/lms-main.png";
+import thdark from "../assets/th-dark.png";
+import thdash from "../assets/th-dash.png";
+import thmain from "../assets/th-main.png";
+import wmscontact from "../assets/wms-contact.png";
+import wmsdash from "../assets/wms-dash.png";
+import wmsmain from "../assets/wms-main.png";
 
 const ProjectPage = () => {
   const { projectID } = useParams();
@@ -231,7 +231,7 @@ const ProjectPage = () => {
   }, [projectID]);
   return (
     <div className="sm:px-8 mt-16 sm:mt-20">
-      <h1 className="text-4xl font-bold tracking-tight mb-8 text-zinc-800 sm:text-5xl dark:text-zinc-100 hover:text-teal-500 dark:hover:text-teal-400 hover:cursor-pointer">
+      <h1 className="text-4xl font-bold tracking-tight mb-8 text-zinc-800 sm:text-5xl dark:text-zinc-100 hover:text-blue-500 dark:hover:text-blue-400 hover:cursor-pointer">
         <a href={selectedProject?.url} target="_blank">
           {selectedProject && selectedProject?.title}{" "}
           <ArrowUpRightIcon className="w-8 inline" />
@@ -258,7 +258,7 @@ const ProjectPage = () => {
           <a
             href={selectedProject?.url}
             target="_blank"
-            className="hover:text-teal-500 dark:hover:text-teal-400 hover:cursor-pointer font-semibold"
+            className="hover:text-blue-500 dark:hover:text-blue-400 hover:cursor-pointer font-semibold"
           >
             <LinkIcon className="w-6 inline" /> Check the live website
           </a>
@@ -266,10 +266,10 @@ const ProjectPage = () => {
           <a
             href={selectedProject?.github}
             target="_blank"
-            className="hover:text-teal-500 dark:hover:text-teal-400 hover:cursor-pointer font-semibold"
+            className="hover:text-blue-500 dark:hover:text-blue-400 hover:cursor-pointer font-semibold"
           >
             <svg
-              className="w-6 h-6 text-gray-800 inline dark:text-white hover:text-teal-500 dark:hover:text-teal-400"
+              className="w-6 h-6 text-gray-800 inline dark:text-white hover:text-blue-500 dark:hover:text-blue-400"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"

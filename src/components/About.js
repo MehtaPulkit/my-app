@@ -42,11 +42,11 @@ const About = () => {
           build scalable SaaS platforms and product features used in real-world
           production environments. Experienced in TypeScript, React, NestJS, and
           cloud infrastructure, with a strong focus on clean architecture,
-          performance, and maintainability. Previously Senior Software
-          Development Engineer at Montu Group, contributing to large-scale
-          healthcare platform systems and Financial Services projects.
-          Passionate about delivering high-quality software solutions and
-          driving innovation in the tech industry.
+          performance, and maintainability. <br />
+          Previously Senior Software Development Engineer at Montu Group,
+          contributing to large-scale healthcare platform systems and Financial
+          Services projects. Passionate about delivering high-quality software
+          solutions and driving innovation in the tech industry.
         </p>
         <p>
           📍 Geelong, Australia <br />
