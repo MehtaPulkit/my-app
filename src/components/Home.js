@@ -1,9 +1,7 @@
-import React from "react";
-
-import Skills from "./Skills";
+import { educationData, workData } from "../config/boxData";
 import About from "./About";
 import Infobox from "./Infobox";
-import { educationData, workData } from "../config/boxData";
+import Skills from "./Skills";
 
 const Home = () => {
   return (

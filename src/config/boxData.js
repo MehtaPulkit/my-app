@@ -1,8 +1,8 @@
 import cdLogo from "../assets/clear_dynamics_logo.jpg";
-import infosysLogo from "../assets/infosys_logo.jpg";
 import deakinUni from "../assets/deakinUni.jpg";
+import infosysLogo from "../assets/infosys_logo.jpg";
+import montuLogo from "../assets/montu_group_logo.jpg";
 import panjabUni from "../assets/panjabUni.jpg";
-import workLogo from "../assets/work-logo.svg";
 export const educationData = {
   id: "education",
   titleImg:
@@ -39,6 +39,16 @@ export const workData = {
   title: "Work",
   items: [
     {
+      title: "Montu",
+      img: montuLogo,
+      category: "Company",
+      type: "Role",
+      acheivement: "Senior Software Engineer",
+      detail: "Date",
+      startYear: "2024",
+      endYear: "Present",
+    },
+    {
       title: "Clear Dynamics",
       img: cdLogo,
       category: "Company",
@@ -46,7 +56,7 @@ export const workData = {
       acheivement: "Senior Technical Lead",
       detail: "Date",
       startYear: "2020",
-      endYear: "Present",
+      endYear: "2024",
     },
     {
       title: "Infosys",

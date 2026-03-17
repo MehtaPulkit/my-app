@@ -1,13 +1,11 @@
-import React from "react";
-import companies from "../assets/companies.jpeg";
-import edu from "../assets/edu.jpeg";
-import wlogo from "../assets/w-logo.svg";
-import tlogo from "../assets/thriveeeLogo.svg";
 import { LinkIcon } from "@heroicons/react/20/solid";
 import { Link } from "react-router-dom";
+import companies from "../assets/companies.jpeg";
+import edu from "../assets/edu.jpeg";
+import tlogo from "../assets/thriveeeLogo.svg";
+import wlogo from "../assets/w-logo.svg";
 
 const Project = () => {
-
   const projects = [
     {
       name: "Thriveee",
@@ -41,7 +39,8 @@ const Project = () => {
           Queensland, Latitude Financial Services and Energy Australia. These
           experiences have allowed me to apply my full-stack development skills
           and technical leadership to a range of challenging and impactful
-          projects.<br/> I led the development of innovative web applications that
+          projects.
+          <br /> I led the development of innovative web applications that
           streamlined business processes and I collaborated with
           cross-functional teams to deliver high-quality software solutions for
           diverse clients. These projects have honed my ability to deliver
@@ -52,7 +51,7 @@ const Project = () => {
       <img alt="companies" src={companies} className="h-24 m-auto" />
       <div className="my-10">
         <p className="my-2 dark:text-zinc-400">
-         <b className="text-lg">Live Projects:</b> 
+          <b className="text-lg">Live Projects:</b>
           <br />
           Explore a selection of my key projects that demonstrate my skills in
           full-stack development and problem-solving.
@@ -64,7 +63,10 @@ const Project = () => {
           className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
         >
           {projects.map((p, i) => (
-            <li className="group relative flex flex-col items-start p-2 m-4" key={i}>
+            <li
+              className="group relative flex flex-col items-start p-2 m-4"
+              key={i}
+            >
               <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 ">
                 {" "}
                 <img className="rounded-full" src={p?.img} />
@@ -80,7 +82,7 @@ const Project = () => {
                 {p?.desc}
               </p>
               <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-                Check it out <LinkIcon className="w-6 ml-2"/>
+                Check it out <LinkIcon className="w-6 ml-2" />
               </p>
             </li>
           ))}

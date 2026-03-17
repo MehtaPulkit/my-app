@@ -1,5 +1,3 @@
-import React from "react";
-
 const Infobox = ({ id, titleImg, title, items }) => {
   return (
     <section id={id} className="my-5">

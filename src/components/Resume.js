@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
-import resumeFile from "../assets/files/Resume-Pulkit.pdf";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
+import resumeFile from "../assets/files/Resume-Pulkit.pdf";
 import DownloadButton from "../utils/DownloadButton";
 const Resume = () => {
   pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
@@ -28,7 +28,7 @@ const Resume = () => {
             <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
           </svg></a>
         </button> */}
-        <DownloadButton/>
+        <DownloadButton />
       </h1>
       <div className="max-[640px]:hidden">
         <div className="m-auto flex flex-col items-center border border-solid border-grey w-fit">
