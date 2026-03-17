@@ -1,14 +1,16 @@
 import { educationData, workData } from "../config/boxData";
 import About from "./About";
 import Infobox from "./Infobox";
-import Skills from "./Skills";
+import Leadership from "./Leadership";
+import TechStack from "./TechStack";
 
 const Home = () => {
   return (
     <div>
       <About />
-      <Skills />
+      {/* <Skills /> */}
 
+      <TechStack />
       <Infobox
         id={workData.id}
         title={workData.title}
@@ -16,6 +18,8 @@ const Home = () => {
         items={workData.items}
         details={workData.details}
       />
+      <Leadership />
+
       <Infobox
         id={educationData.id}
         items={educationData.items}

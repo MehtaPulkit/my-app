@@ -2,7 +2,7 @@ const Infobox = ({ id, titleImg, title, items }) => {
   return (
     <section id={id} className="my-5">
       <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-300">
-        <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+        <h2 className="flex  font-semibold text-zinc-900 dark:text-zinc-100">
           <img className="w-6" src={titleImg} />
           <span className="ml-3">{title}</span>
         </h2>
@@ -23,17 +23,17 @@ const Infobox = ({ id, titleImg, title, items }) => {
               </div>
               <dl className="flex flex-auto flex-wrap gap-x-2">
                 <dt className="sr-only">{item?.category}</dt>
-                <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                <dd className="w-full flex-none  font-medium text-zinc-900 dark:text-zinc-100">
                   {item?.title}
                 </dd>
                 <dt className="sr-only">{item?.type}</dt>
-                <dd className="text-xs text-gray-700 dark:text-white">
+                <dd className="text-sm text-gray-700 dark:text-white">
                   {item?.acheivement}
                 </dd>
                 <dt className="sr-only">{item?.detail}</dt>
 
                 <dd
-                  className="ml-auto text-xs text-zinc-700 dark:text-white"
+                  className="ml-auto text-sm text-zinc-700 dark:text-white"
                   aria-label={`${item?.startYear} - ${item?.endYear}`}
                 >
                   <time dateTime={item?.startYear}>{item?.startYear}</time>{" "}

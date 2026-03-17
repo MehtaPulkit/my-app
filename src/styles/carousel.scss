@@ -46,6 +46,11 @@
 .carousel-card>img {
     border-radius: 10%;
     width: 90px;
+    max-width: 67px !important;
+
+    @media (max-width: 480px) {
+        max-width: 50px !important;
+    }
 }
 
 .carousel-track {
@@ -56,7 +61,6 @@
     gap: 16px;
     width: 200%;
     height: 95px;
-    // background: #556c8b;
     animation: slide 16s linear infinite;
 
     &:hover {
