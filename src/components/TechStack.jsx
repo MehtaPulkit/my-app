@@ -49,12 +49,12 @@ const techSections = [
 
 export default function TechStack() {
   return (
-    <section className="py-10 max-w-6xl mx-auto px-6">
+    <section id="skills" className="py-10 max-w-6xl mx-auto px-6">
       <h2 className="text-3xl font-bold mb-10 text-center">
         Technologies I Work With
       </h2>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid md:grid-cols-2 gap-8">
         {techSections.map((section) => (
           <div key={section.title}>
             <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">

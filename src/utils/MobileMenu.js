@@ -1,8 +1,8 @@
-import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import { HashLink } from "react-router-hash-link";
+import { Fragment } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -38,7 +38,7 @@ export default function MobileMenu() {
                   to="/#about"
                   className={classNames(
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-4 text-lg dark:text-white dark:hover:bg-zinc-700"
+                    "block px-4 py-4 text-lg dark:text-white dark:hover:bg-zinc-700",
                   )}
                 >
                   About
@@ -51,7 +51,7 @@ export default function MobileMenu() {
                   to="/#experience"
                   className={classNames(
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-4 text-lg dark:text-white dark:hover:bg-zinc-700"
+                    "block px-4 py-4 text-lg dark:text-white dark:hover:bg-zinc-700",
                   )}
                 >
                   Experience
@@ -64,7 +64,7 @@ export default function MobileMenu() {
                   to="/#skills"
                   className={classNames(
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-4 text-lg dark:text-white dark:hover:bg-zinc-700"
+                    "block px-4 py-4 text-lg dark:text-white dark:hover:bg-zinc-700",
                   )}
                 >
                   Skills
@@ -77,14 +77,14 @@ export default function MobileMenu() {
                   to="/projects"
                   className={classNames(
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-4 text-lg dark:text-white dark:hover:bg-zinc-700"
+                    "block px-4 py-4 text-lg dark:text-white dark:hover:bg-zinc-700",
                   )}
                 >
                   Projects
                 </Link>
               )}
             </Menu.Item>
-            <Menu.Item>
+            {/* <Menu.Item>
               {({ active }) => (
                 <Link
                   to="/resume"
@@ -96,7 +96,7 @@ export default function MobileMenu() {
                   Resume
                 </Link>
               )}
-            </Menu.Item>
+            </Menu.Item> */}
           </div>
         </Menu.Items>
       </Transition>
