@@ -38,15 +38,17 @@ const About = () => {
       {/* Description */}
       <div className="my-4 md:my-10">
         <p className="my-2 dark:text-zinc-400">
-          With over 8 years of experience as a Senior Full-Stack Engineer, I
-          build scalable SaaS platforms and product features used in real-world
-          production environments. Experienced in TypeScript, React, NestJS, and
-          cloud infrastructure, with a strong focus on clean architecture,
-          performance, and maintainability. <br />
-          Previously Senior Software Development Engineer at Montu Group,
-          contributing to large-scale healthcare platform systems and Financial
-          Services projects. Passionate about delivering high-quality software
-          solutions and driving innovation in the tech industry.
+          Senior Full Stack Engineer with 8+ years of experience building
+          scalable SaaS platforms across healthcare, fintech, and enterprise
+          domains. Expert in TypeScript, React, and Node.js, with a strong focus
+          on system design, performance optimization, and delivering high-impact
+          products end-to-end.
+          <br />
+          Proven track record of modernizing legacy systems, designing modular
+          architectures, and integrating real-time communication features using
+          cloud technologies. Strong collaborator with product and design teams,
+          consistently delivering reliable, user-centric solutions in fast-paced
+          Agile environments.
         </p>
         <p>
           📍 Geelong, Australia <br />

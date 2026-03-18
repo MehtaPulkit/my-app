@@ -48,7 +48,7 @@ const Project = () => {
         </p>
       </div>
       <h2 className="font-bold text-lg">Companies:</h2>
-      <img alt="companies" src={companies} className="h-48 m-auto" />
+      <img alt="companies" src={companies} className="md:h-48 m-auto" />
       <div className="my-10">
         <p className="my-2 dark:text-zinc-400">
           <b className="text-lg">Live Projects:</b>
