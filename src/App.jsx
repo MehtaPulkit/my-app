@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom";
+import ErrorPage from "./components/ErrorPage";
+import Home from "./components/Home";
 import Layout from "./components/Layout";
 import Project from "./components/Project";
-import Resume from "./components/Resume";
-import Home from "./components/Home";
-import ErrorPage from "./components/ErrorPage";
-import ProjectPage from "./components/ProjectPage";
 import ProjectLayout from "./components/ProjectLayout";
+import ProjectPage from "./components/ProjectPage";
+import Resume from "./components/Resume";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route exact path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="projects" element={<ProjectLayout />}>
-          <Route index element={<Project />} />
+            <Route index element={<Project />} />
             <Route path="project/:projectID" element={<ProjectPage />} />
           </Route>
           {/* <Route path="jobs" element={<JobLayout />}>
