@@ -8,8 +8,6 @@ const Home = () => {
   return (
     <div>
       <About />
-      {/* <Skills /> */}
-
       <TechStack />
       <Infobox
         id={workData.id}
