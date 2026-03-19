@@ -16,8 +16,8 @@ const ProjectPage = () => {
   const [selectedProject, setSelectedProject] = useState();
   const content = [
     {
-      name: "thriveee",
-      title: "Thriveee",
+      name: "investio",
+      title: "Investio",
       heading: "Accounting software, managing your wealth for future success",
       url: "https://thriveee.onrender.com",
       github: "https://github.com/MehtaPulkit/thriveee",

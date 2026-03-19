@@ -8,10 +8,10 @@ import wlogo from "../assets/w-logo.svg";
 const Project = () => {
   const projects = [
     {
-      name: "Thriveee",
+      name: "Investio",
       desc: "Accounting software, managing your wealth for future success",
       img: tlogo,
-      url: "project/thriveee",
+      url: "project/investio",
     },
     {
       name: "Edu Hub",
