@@ -51,7 +51,7 @@ const About = () => {
           Agile environments.
         </p>
         <p>
-          📍 Geelong, Australia <br />
+          📍 Melbourne, Australia <br />
           💼 Open to Senior / Staff Software Engineer roles
         </p>
         <div className="my-8">
