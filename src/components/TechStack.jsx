@@ -12,6 +12,7 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
+import { SlSettings } from "react-icons/sl";
 const techSections = [
   {
     title: "Frontend",
@@ -28,6 +29,7 @@ const techSections = [
       { name: "Node.js", icon: SiNodedotjs },
       { name: "NestJS", icon: SiNestjs },
       { name: "GraphQL", icon: SiGraphql },
+      { name: "REST API", icon: SlSettings },
     ],
   },
   {

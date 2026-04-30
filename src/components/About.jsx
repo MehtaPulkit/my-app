@@ -38,21 +38,20 @@ const About = () => {
       {/* Description */}
       <div className="my-4 md:my-10">
         <p className="my-2 dark:text-zinc-400">
-          Senior Full Stack Engineer with 8+ years of experience building
-          scalable SaaS platforms across healthcare, fintech, and enterprise
-          domains. Expert in TypeScript, React, and Node.js, with a strong focus
-          on system design, performance optimization, and delivering high-impact
-          products end-to-end.
-          <br />
-          Proven track record of modernizing legacy systems, designing modular
-          architectures, and integrating real-time communication features using
-          cloud technologies. Strong collaborator with product and design teams,
-          consistently delivering reliable, user-centric solutions in fast-paced
-          Agile environments.
+          Senior Full Stack Engineer with 8+ years of experience building and scaling high-availability,
+          customer-facing platforms across fintech and healthcare domains.
+          Specialised in TypeScript, React, and Node.js, with a strong focus on system design, performance
+          optimisation, and production reliability. Proven track record of delivering business-critical systems,
+          modernising legacy architectures, and improving platform scalability in regulated environments.
+          <br /><br />
+          Actively leverage AI development tools (e.g., Cursor, Co-pilot) to accelerate feature delivery,
+          improve code quality, and enhance debugging and refactoring workflows.
+          Experienced in collaborating with cross-functional teams, mentoring engineers, and contributing
+          to architectural decisions to deliver secure, resilient, and maintainable software systems.
         </p>
         <p>
           📍 Melbourne, Australia <br />
-          💼 Open to Senior / Staff Software Engineer roles
+          💼 Open to Senior Software Engineer roles
         </p>
         <div className="my-8">
           <b className="text-xl">Technical Expertise:</b>{" "}
@@ -82,8 +81,8 @@ const About = () => {
                 Experienced in designing efficient data models and optimizing
                 queries for scalable applications.
               </p>
-              <p className="font-medium">Technologies:</p>
-              <p>PostgreSQL • MongoDB • MSSQL</p>
+              <p className="font-medium dark:text-zinc-400">Technologies:</p>
+              <p className="dark:text-zinc-400">PostgreSQL • MongoDB • MSSQL</p>
             </li>{" "}
             <li className="mb-4">
               {" "}
@@ -93,8 +92,8 @@ const About = () => {
                 DevOps and cloud practices, including automated CI/CD pipelines,
                 containerized environments, and scalable infrastructure.
               </p>
-              <p className="font-medium">Tools & platforms:</p>
-              <p>
+              <p className="font-medium dark:text-zinc-400">Tools & platforms:</p>
+              <p className="dark:text-zinc-400">
                 Docker • Kubernetes • AWS • GitHub Actions • CI/CD pipelines
               </p>
             </li>
