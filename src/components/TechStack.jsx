@@ -1,81 +1,60 @@
-import { FaAws } from "react-icons/fa";
-import {
-  SiDocker,
-  SiGithubactions,
-  SiGraphql,
-  SiMongodb,
-  SiNestjs,
-  SiNodedotjs,
-  SiPostgresql,
-  SiReact,
-  SiRedux,
-  SiTailwindcss,
-  SiTypescript,
-} from "react-icons/si";
-import { SlSettings } from "react-icons/sl";
 const techSections = [
   {
     title: "Frontend",
-    items: [
-      { name: "React", icon: SiReact },
-      { name: "TypeScript", icon: SiTypescript },
-      { name: "Redux", icon: SiRedux },
-      { name: "Tailwind CSS", icon: SiTailwindcss },
-    ],
+    items: ["React", "TypeScript", "JavaScript", "Tailwind", "MUI", "Vite", "Storybook"],
   },
   {
     title: "Backend",
-    items: [
-      { name: "Node.js", icon: SiNodedotjs },
-      { name: "NestJS", icon: SiNestjs },
-      { name: "GraphQL", icon: SiGraphql },
-      { name: "REST API", icon: SlSettings },
-    ],
+    items: ["Node.js", "NestJS", "GraphQL APIs", "REST APIs"],
   },
   {
-    title: "Database",
-    items: [
-      { name: "PostgreSQL", icon: SiPostgresql },
-      { name: "MongoDB", icon: SiMongodb },
-    ],
+    title: "Database / Cloud",
+    items: ["PostgreSQL", "Supabase", "AWS basics", "Vercel", "Render"],
   },
   {
-    title: "Cloud & DevOps",
+    title: "Engineering",
     items: [
-      { name: "AWS", icon: FaAws },
-      { name: "Docker", icon: SiDocker },
-      { name: "GitHub Actions", icon: SiGithubactions },
+      "Testing",
+      "CI/CD",
+      "Git",
+      "Clean architecture",
+      "Design systems",
+      "Performance",
+      "Accessibility",
     ],
   },
 ];
 
 export default function TechStack() {
   return (
-    <section id="skills" className="py-10 max-w-6xl mx-auto px-6">
-      <h2 className="text-3xl font-bold mb-10 text-center">
-        Technologies I Work With
-      </h2>
+    <section id="skills" className="py-12">
+      <div className="mb-8">
+        <p className="text-sm font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-400">
+          Skills
+        </p>
+        <h2 className="mt-2 text-3xl font-bold text-zinc-900 dark:text-zinc-100">
+          Engineering strengths
+        </h2>
+      </div>
 
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid gap-6 md:grid-cols-2">
         {techSections.map((section) => (
-          <div key={section.title}>
-            <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+          <div
+            key={section.title}
+            className="rounded-lg border border-zinc-200 p-5 dark:border-zinc-700"
+          >
+            <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
               {section.title}
             </h3>
-
-            <div className="grid grid-cols-2 gap-4">
-              {section.items.map((tech) => {
-                const Icon = tech.icon;
-                return (
-                  <div
-                    key={tech.name}
-                    className="flex items-center gap-2 p-3 rounded-lg border border-gray-200 dark:border-gray-700 hover:shadow-md hover:-translate-y-1 transition"
-                  >
-                    <Icon className="text-xl text-blue-500" />
-                    <span className="text-sm font-medium">{tech.name}</span>
-                  </div>
-                );
-              })}
+            <div className="mt-4 flex flex-wrap gap-2">
+              {section.items.map((tech) => (
+                <span
+                  key={tech}
+                  className="rounded-full bg-zinc-100 px-3 py-1 text-sm font-medium text-zinc-700 dark:bg-zinc-700 dark:text-zinc-100"
+                >
+                  {tech}
+                </span>
+              ))}
             </div>
           </div>
         ))}

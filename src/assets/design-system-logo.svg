@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">Pulkit Design System logo</title>
+  <desc id="desc">Layered component tiles representing reusable design system building blocks.</desc>
+  <rect width="96" height="96" rx="22" fill="#18181b"/>
+  <rect x="22" y="20" width="28" height="28" rx="8" fill="#38bdf8"/>
+  <rect x="46" y="20" width="28" height="28" rx="8" fill="#a3e635"/>
+  <rect x="22" y="48" width="28" height="28" rx="8" fill="#f472b6"/>
+  <rect x="46" y="48" width="28" height="28" rx="8" fill="#facc15"/>
+  <path d="M28 34h16M52 34h16M28 62h16M52 62h16" stroke="#18181b" stroke-width="4" stroke-linecap="round"/>
+</svg>

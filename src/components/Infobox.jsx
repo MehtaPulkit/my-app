@@ -1,9 +1,9 @@
 const Infobox = ({ id, titleImg, title, items }) => {
   return (
-    <section id={id} className="my-5">
-      <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-300">
-        <h2 className="flex  font-semibold text-zinc-900 dark:text-zinc-100">
-          <img className="w-6" src={titleImg} />
+    <section id={id} className="my-12">
+      <div className="rounded-lg border border-zinc-200 p-6 dark:border-zinc-700">
+        <h2 className="flex text-2xl font-bold text-zinc-900 dark:text-zinc-100">
+          <img className="w-6" src={titleImg} alt="" aria-hidden="true" />
           <span className="ml-3">{title}</span>
         </h2>
         <ol className="mt-6 space-y-4">
@@ -11,7 +11,7 @@ const Infobox = ({ id, titleImg, title, items }) => {
             <li className="flex gap-4" key={item?.title}>
               <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-400 dark:bg-zinc-800 dark:ring-0">
                 <img
-                  alt=""
+                  alt={`${item?.title} logo`}
                   loading="lazy"
                   width="32"
                   height="32"
@@ -30,6 +30,20 @@ const Infobox = ({ id, titleImg, title, items }) => {
                 <dd className="text-sm text-gray-700 dark:text-white">
                   {item?.acheivement}
                 </dd>
+                {item?.summary && (
+                  <dd className="mt-2 w-full text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                    {item.summary}
+                  </dd>
+                )}
+                {item?.highlights && (
+                  <dd className="mt-3 w-full">
+                    <ul className="list-disc space-y-1 pl-5 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                      {item.highlights.map((highlight) => (
+                        <li key={highlight}>{highlight}</li>
+                      ))}
+                    </ul>
+                  </dd>
+                )}
                 <dt className="sr-only">{item?.detail}</dt>
 
                 <dd

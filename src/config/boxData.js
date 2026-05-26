@@ -44,9 +44,16 @@ export const workData = {
       category: "Company",
       type: "Role",
       acheivement: "Senior Software Engineer",
+      summary:
+        "Contributing to production healthcare platforms with a focus on reliable product delivery, frontend quality and cross-functional collaboration.",
+      highlights: [
+        "Own React and TypeScript feature work across customer-facing and internal workflows.",
+        "Collaborate with product, design and backend teams on API integration, release quality and maintainable delivery.",
+        "Support production readiness through code review, testing discipline and pragmatic technical decisions.",
+      ],
       detail: "Date",
       startYear: "2024",
-      endYear: "Present",
+      endYear: "Apr 2026",
     },
     {
       title: "Clear Dynamics",
@@ -54,6 +61,13 @@ export const workData = {
       category: "Company",
       type: "Role",
       acheivement: "Senior Technical Lead",
+      summary:
+        "Led delivery of full-stack business applications and reusable frontend patterns across client-facing product work.",
+      highlights: [
+        "Owned architecture decisions across React frontends, Node.js APIs and integration-heavy workflows.",
+        "Built reusable components and guided teams toward cleaner patterns, stronger reviews and consistent delivery.",
+        "Worked directly with stakeholders to translate business requirements into scalable technical solutions.",
+      ],
       detail: "Date",
       startYear: "2020",
       endYear: "2024",
@@ -64,6 +78,12 @@ export const workData = {
       category: "Company",
       type: "Role",
       acheivement: "System Engineer",
+      summary:
+        "Built a foundation in enterprise software delivery, API development, debugging and structured engineering practices.",
+      highlights: [
+        "Delivered application features in a large engineering environment with established delivery processes.",
+        "Worked across implementation, defect resolution and stakeholder communication.",
+      ],
       detail: "Date",
       startYear: "2016",
       endYear: "2018",

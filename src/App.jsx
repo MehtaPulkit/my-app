@@ -5,7 +5,6 @@ import Layout from "./components/Layout";
 import Project from "./components/Project";
 import ProjectLayout from "./components/ProjectLayout";
 import ProjectPage from "./components/ProjectPage";
-import Resume from "./components/Resume";
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
                       <Route path="create" element={<Job />} />
                       <Route path="edit/:jobID" element={<Job />} />
                     </Route> */}
-          <Route path="resume" element={<Resume />} />
         </Route>
         <Route path="*" element={<ErrorPage />} />
       </Routes>

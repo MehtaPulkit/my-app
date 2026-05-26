@@ -1,5 +1,6 @@
 import { educationData, workData } from "../config/boxData";
 import About from "./About";
+import Contact from "./Contact";
 import Infobox from "./Infobox";
 import Leadership from "./Leadership";
 import TechStack from "./TechStack";
@@ -17,13 +18,13 @@ const Home = () => {
         details={workData.details}
       />
       <Leadership />
-
       <Infobox
         id={educationData.id}
         items={educationData.items}
         title={educationData.title}
         titleImg={educationData.titleImg}
       />
+      <Contact />
     </div>
   );
 };
