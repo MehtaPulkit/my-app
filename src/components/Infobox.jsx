@@ -23,7 +23,7 @@ const Infobox = ({ id, titleImg, title, items }) => {
               </div>
               <dl className="flex flex-auto flex-wrap gap-x-2">
                 <dt className="sr-only">{item?.category}</dt>
-                <dd className="w-full flex-none  font-medium text-zinc-900 dark:text-zinc-100">
+                <dd className="w-full flex-none font-medium text-zinc-900 dark:text-zinc-100">
                   {item?.title}
                 </dd>
                 <dt className="sr-only">{item?.type}</dt>
@@ -44,14 +44,21 @@ const Infobox = ({ id, titleImg, title, items }) => {
                     </ul>
                   </dd>
                 )}
+                {item?.stack && (
+                  <dd className="mt-3 w-full text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                    <span className="font-semibold text-zinc-900 dark:text-zinc-100">
+                      Tech stack:
+                    </span>{" "}
+                    {item.stack}
+                  </dd>
+                )}
                 <dt className="sr-only">{item?.detail}</dt>
-
                 <dd
                   className="ml-auto text-sm text-zinc-700 dark:text-white"
                   aria-label={`${item?.startYear} - ${item?.endYear}`}
                 >
                   <time dateTime={item?.startYear}>{item?.startYear}</time>{" "}
-                  <span aria-hidden="true">—</span>{" "}
+                  <span aria-hidden="true">-</span>{" "}
                   <time dateTime={item?.endYear}>{item?.endYear}</time>
                 </dd>
               </dl>

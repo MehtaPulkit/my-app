@@ -1,5 +1,5 @@
-import edu from "../assets/edu.jpeg";
 import designSystemLogo from "../assets/design-system-logo.svg";
+import edu from "../assets/edu.jpeg";
 import fwLogo from "../assets/fw-full-logo.png";
 import hwLogo from "../assets/hw-logo.jpg";
 import lmsdark from "../assets/lms-dark.png";
@@ -23,8 +23,7 @@ export const featuredProjects = [
       "A full-stack accounting platform for managing contacts, invoices, transactions, dashboards and financial reports.",
     problem:
       "Small business users need a simpler way to manage day-to-day accounting workflows without switching between disconnected tools.",
-    role:
-      "Owned the full-stack build across React UI, REST APIs, authentication, dashboard flows and responsive implementation.",
+    role: "Owned the full-stack build across React UI, REST APIs, authentication, dashboard flows and responsive implementation.",
     impact:
       "Demonstrates product thinking, data-heavy UI design, secure auth, CRUD architecture and dashboard visualisation.",
     decisions: [
@@ -32,7 +31,16 @@ export const featuredProjects = [
       "Built REST APIs around core accounting resources such as contacts, invoices, transactions and reports.",
       "Used Tailwind CSS to move quickly while keeping a consistent responsive interface.",
     ],
-    stack: ["React", "Redux", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT", "Recharts"],
+    stack: [
+      "React",
+      "Redux",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Tailwind CSS",
+      "JWT",
+      "Recharts",
+    ],
     liveUrl: "https://thriveee.onrender.com",
     githubUrl: "https://github.com/MehtaPulkit/thriveee",
     caseStudyUrl: "/projects/project/investio",
@@ -55,8 +63,7 @@ export const featuredProjects = [
       "An online learning platform with course management, enrolment tracking, admin dashboards and revenue visibility.",
     problem:
       "Course operators need a central place to manage learning content, student enrolments and commercial performance.",
-    role:
-      "Designed and implemented the MERN application, including admin workflows, course CRUD, dashboard screens and API integration.",
+    role: "Designed and implemented the MERN application, including admin workflows, course CRUD, dashboard screens and API integration.",
     impact:
       "Shows SaaS admin-product thinking, role-based workflows, dashboard UX and full-stack delivery.",
     decisions: [
@@ -64,7 +71,15 @@ export const featuredProjects = [
       "Used Redux for shared application state across admin and course-management flows.",
       "Prioritised responsive layouts so administrators can monitor the platform across devices.",
     ],
-    stack: ["React", "Redux", "Node.js", "Express", "MongoDB", "Tailwind CSS", "REST APIs"],
+    stack: [
+      "React",
+      "Redux",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Tailwind CSS",
+      "REST APIs",
+    ],
     liveUrl: "https://client-lms.onrender.com",
     githubUrl: "https://github.com/MehtaPulkit/wms",
     caseStudyUrl: "/projects/project/lms",
@@ -87,8 +102,7 @@ export const featuredProjects = [
       "A safety-focused web app with live location tracking, SOS alerts and emergency-contact workflows.",
     problem:
       "Users need a fast way to share location and alert trusted contacts during a potential emergency.",
-    role:
-      "Built the full-stack application across React UI, location workflows, backend APIs and notification integration.",
+    role: "Built the full-stack application across React UI, location workflows, backend APIs and notification integration.",
     impact:
       "Demonstrates real-time UX, geolocation, notification-oriented workflows and careful mobile-first design.",
     decisions: [
@@ -96,7 +110,16 @@ export const featuredProjects = [
       "Structured emergency-contact and alert flows around clear backend endpoints.",
       "Designed the SOS interaction for mobile-first access and low-friction action.",
     ],
-    stack: ["React", "Redux", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Geolocation API", "Nodemailer"],
+    stack: [
+      "React",
+      "Redux",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Tailwind CSS",
+      "Geolocation API",
+      "Nodemailer",
+    ],
     liveUrl: "https://wms-5uub.onrender.com",
     githubUrl: "https://github.com/MehtaPulkit/client-lms",
     caseStudyUrl: "/projects/project/wms",
@@ -119,8 +142,7 @@ export const featuredProjects = [
       "A demonstration design system with React components, shared tokens and Storybook documentation published to npm.",
     problem:
       "Growing products need reusable components and design foundations to keep UI delivery consistent.",
-    role:
-      "Built the component package, token package and Storybook documentation for a reusable design-system workflow.",
+    role: "Built the component package, token package and Storybook documentation for a reusable design-system workflow.",
     impact:
       "Highlights component-driven architecture, package publishing, Storybook documentation and design-system thinking.",
     decisions: [
@@ -129,7 +151,8 @@ export const featuredProjects = [
       "Published packages to npm to mirror real-world design-system distribution.",
     ],
     stack: ["React", "TypeScript", "Design Tokens", "Storybook", "npm", "Vite"],
-    liveUrl: "https://pulkit-design-system-storybook.vercel.app/?path=/docs/introduction--docs",
+    liveUrl:
+      "https://pulkit-design-system-storybook.vercel.app/?path=/docs/introduction--docs",
     githubUrl: "",
     caseStudyUrl: "",
     image: designSystemLogo,
@@ -151,21 +174,24 @@ export const featuredProjects = [
 export const secondaryProjects = [
   {
     title: "Hayeswinckle",
-    summary: "Real estate agency website work for a property business.",
+    summary:
+      "A website build for a real estate agency, including custom QR codes, agent profiles and contact workflows.",
     liveUrl: "https://www.hayeswincklegeelong.com.au/agents",
     image: hwLogo,
     imageAlt: "Hayeswinckle logo",
   },
   {
     title: "Fastway Junk Removal",
-    summary: "Service website for a junk removal business.",
+    summary:
+      "Website build for a junk removal business, including service pages, booking form and contact workflows.",
     liveUrl: "https://www.fastwayjunkremoval.com.au/",
     image: fwLogo,
     imageAlt: "Fastway Junk Removal logo",
   },
   {
     title: "Thriveee",
-    summary: "Marketplace platform connecting professional services with clients across Australia.",
+    summary:
+      "Marketplace platform connecting professional services with clients across Australia.",
     liveUrl: "https://www.thriveee.com.au/",
     image: thriveeeLogo,
     imageAlt: "Thriveee logo",

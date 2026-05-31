@@ -168,7 +168,7 @@ const Project = () => {
           {secondaryProjects.map((project) => (
             <article
               key={project.title}
-              className="rounded-lg border border-zinc-200 p-5 dark:border-zinc-700"
+              className="flex h-full flex-col rounded-lg border border-zinc-200 p-5 dark:border-zinc-700"
             >
               <div className="flex min-h-14 items-center gap-4">
                 <div className="flex h-14 w-24 flex-none items-center justify-center rounded-md bg-white p-2 shadow-sm ring-1 ring-zinc-200 dark:bg-zinc-800 dark:ring-zinc-700">
@@ -186,18 +186,20 @@ const Project = () => {
               <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
                 {project.summary}
               </p>
-              <a
-                href={project.liveUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-zinc-700 transition hover:text-blue-600 dark:text-zinc-200 dark:hover:text-blue-400"
-              >
-                Live site
-                <ArrowTopRightOnSquareIcon
-                  className="h-4 w-4"
-                  aria-hidden="true"
-                />
-              </a>
+              <div className="mt-auto flex flex-wrap gap-3 pt-6">
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 rounded-md bg-zinc-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:bg-white dark:text-zinc-900 dark:hover:bg-blue-200"
+                >
+                  Live site
+                  <ArrowTopRightOnSquareIcon
+                    className="h-4 w-4"
+                    aria-hidden="true"
+                  />
+                </a>
+              </div>
             </article>
           ))}
         </div>
